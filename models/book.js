@@ -45,3 +45,7 @@ module.exports.getBookById = function (id, callback) {
 module.exports.addBook = function (book, callback) {
 	Book.create(book, callback);
 };
+
+module.exports.deleteBook = function (id, callback) {
+	Book.remove(id, callback);
+};
