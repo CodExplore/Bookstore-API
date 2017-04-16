@@ -28,6 +28,9 @@ app.get("/api/genres", function (req, res) {
 
 //POST Genres
 app.post("/api/genres", function (req, res) {
+	if(!req.body){
+		return res.sendStatus(400);
+	}
 	var genre = req.body;
 	Genre.addGenres(genre, function (err, genre) {
 		if (err) {
@@ -39,8 +42,11 @@ app.post("/api/genres", function (req, res) {
 
 //POST Book
 app.post("/api/books", function (req, res) {
+	if(!req.body){
+		return res.sendStatus(400);
+	}
 	var book = req.body;
-	console.log(book);
+
 	Book.addBook(book, function (err, book) {
 		if (err) {
 			throw err;
