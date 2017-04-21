@@ -22,3 +22,7 @@ module.exports.getGenres = function (callback, limit) {
 module.exports.addGenres = function (genre, callback) {
 	Genre.create(genre, callback);
 };
+
+module.exports.deleteBook = function (id, callback) {
+	Genre.remove(id, callback);
+};
