@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var Genre = require('./models/genre');
 var Book = require('./models/book');
+var bcrypt = require('bcrypt');
 
 //Connect to Mongoose
 app.use(bodyParser.json());
