@@ -1,5 +1,5 @@
 {
-	"name": "sample",
+	"name": "simple bookstore api",
 	"version": "1.0.0",
 	"description": "Simple api",
 	"main": "app.js",
